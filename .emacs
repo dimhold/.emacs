@@ -11,3 +11,14 @@
 (setq auto-save-list-file-name nil) ; Don't want any .saves files
 (setq auto-save-default nil) ; Don't want any auto saving
 (setq create-lockfiles nil) ; Don't want any .# symlink lock files
+
+;; MELPA
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.org/packages/") t)
+
+;; Yasnippet
+(add-to-list 'load-path
+	     "~/.emacs.d/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
