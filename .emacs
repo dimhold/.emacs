@@ -1,0 +1,15 @@
+(global-set-key (kbd "C-l") 'forward-char)
+(global-set-key (kbd "C-h") 'backward-char)
+(global-set-key (kbd "C-k") 'previous-line)
+(global-set-key (kbd "C-s") 'save-buffer)
+(global-set-key (kbd "C-j") 'next-line)
+(global-set-key (kbd "C-w") 'forward-word)
+(global-set-key (kbd "C-b") 'backward-word)
+(global-set-key (kbd "C-q") 'save-buffers-kill-emacs)
+(global-set-key (kbd "<f5>") 'pp-eval-last-sexp)
+
+(defun say-hi ()
+  (interactive)
+  (message "Hi!!1"))
+
+(global-set-key (kbd "<f12>") 'say-hi)
