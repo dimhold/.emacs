@@ -1,5 +1,11 @@
 (load-file "~/.emacs.d/keys.el")
 
+(setq show-parent-mode 'expression)
+(show-paren-mode 1)
+
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+
 (defun say-hi ()
   (interactive)
   (message "Hi!!1"))
