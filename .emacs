@@ -1,4 +1,9 @@
 (load-file "~/.emacs.d/keys.el")
+(load-file "~/.emacs.d/undo-tree-0.6.4.el")
+
+;; undo-tree
+(require 'undo-tree)
+(global-undo-tree-mode)
 
 (setq show-parent-mode 'expression)
 (show-paren-mode 1)
