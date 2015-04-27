@@ -1,4 +1,5 @@
 (load-file "~/.emacs.d/keys.el")
+(load-file "~/.emacs.d/mode-line.el")
 (load-file "~/.emacs.d/undo-tree-0.6.4.el")
 
 ;; undo-tree
@@ -10,12 +11,6 @@
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-
-(defun say-hi ()
-  (interactive)
-  (message "Hi!!1"))
-
-(global-set-key (kbd "<f12>") 'say-hi)
 
 (setq vc-follow-symlinks nil) ; Don't want any prompt because symlink
 (setq make-backup-files nil) ; Don't want any backup ~ files
